@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{% endblock title %} - Zipzope
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'CSS/main.css' %}">
+</head>
+<body>
+    {% block content %}{% endblock content %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<span>
+<a _ngcontent-serverapp-c44="" routerlink="/contact" class="btn btn-primary my-2" href="/contact">Contact Me</a>
+
+<h2 _ngcontent-serverapp-c31="">Contact me!</h2>
+
+<label _ngcontent-serverapp-c31="" for="name">Your Name</label>
+<input _ngcontent-serverapp-c31="" type="name" id="name" placeholder="Enter your Name" required="" name="name" ngmodel="" class="form-control ng-untouched ng-pristine ng-invalid">
+
+<label _ngcontent-serverapp-c31="" for="email">Your Email</label>
+<input _ngcontent-serverapp-c31="" type="email" id="email" placeholder="Enter your Email" required="" name="email" ngmodel="" class="form-control ng-untouched ng-pristine ng-invalid">
+
+<label _ngcontent-serverapp-c31="" for="phone">Your Phone Number</label>
+<input _ngcontent-serverapp-c31="" type="number" id="phone" placeholder="Enter your Phone Number" minlength="10" maxlength="10" required="" name="phone" ngmodel="" class="form-control ng-untouched ng-pristine ng-invalid">
+
+<label _ngcontent-serverapp-c31="" for="description">Describe what you want to contact me for here</label>
+<textarea _ngcontent-serverapp-c31="" type="text" id="message" placeholder="Your message" required="" name="message" ngmodel="" class="form-control ng-untouched ng-pristine ng-invalid"></textarea>
+
+<button _ngcontent-serverapp-c31="" type="submit" class="btn btn-danger mt-2" enabled=""><!----> Submit</button>
+
+</span>
